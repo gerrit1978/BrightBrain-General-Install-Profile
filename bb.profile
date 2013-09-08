@@ -56,7 +56,7 @@ function bb_install_import_locales(&$install_state) {
   
 }
 
-function bbn_set_default_language(&$install_state) {
+function bb_set_default_language(&$install_state) {
   // set Dutch as default language
   $languages = language_list();
   variable_set('language_default', $languages['nl']);
