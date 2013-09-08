@@ -18,6 +18,7 @@ function bb_install_tasks($install_state) {
 }
 
 function bb_install_import_locales(&$install_state) {
+/*
   include_once DRUPAL_ROOT . '/includes/locale.inc';
   include_once DRUPAL_ROOT . '/includes/iso.inc';
   $batch = array();
@@ -53,7 +54,7 @@ function bb_install_import_locales(&$install_state) {
       variable_set('bb_install_import_locales', $batch['#components']);
       return $batch;
   }
-  
+*/
 }
 
 function bb_set_default_language(&$install_state) {
