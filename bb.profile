@@ -14,6 +14,12 @@ function bb_install_tasks($install_state) {
       'type' => 'normal',
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
     ),
+    'bb_extra_configurations' => array(
+      'display_name' => 'Extra configuraties',
+      'display' => TRUE,
+      'type' => 'normal',
+      'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
+    ),
   );
 }
 
@@ -48,4 +54,11 @@ function bb_add_homepage(&$install_state) {
 	}  
 
   variable_set('site_frontpage', 'node/1');
+}
+
+function bb_extra_configurations(&$install_state) {
+
+  // extra variables to be set
+  variable_set('pathauto_node_pattern', '[node:title]');
+
 }
