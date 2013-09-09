@@ -27,7 +27,6 @@ function bb_set_default_language(&$install_state) {
 function bb_add_homepage(&$install_state) {
   $node = new StdClass();
   $node->uid = 1;
-  $node->format = $formats['Full HTML'];
   node_save($node);
   
   variable_set('site_frontpage', 'node/1');
