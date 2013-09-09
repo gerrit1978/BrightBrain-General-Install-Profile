@@ -39,8 +39,9 @@ function bb_add_homepage(&$install_state) {
 	node_object_prepare($node); // Set some default values
 	
 	$node->title    = "Homepage";
-	$node->language = LANGUAGE_NONE; // Or e.g. 'en' if locale is enabled
-	
+	//$node->language = LANGUAGE_NONE; // Or e.g. 'en' if locale is enabled
+        $node->language = 'nl';
+
 	$node->uid = 1; // UID of the author of the node; or use $node->name
 	
 	$node->body[$node->language][0]['value']   = $bodytext;
