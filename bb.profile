@@ -65,6 +65,7 @@ function bb_extra_configurations(&$install_state) {
   variable_set('pathauto_node_pattern', '[node:title]');
   
   // default theme
+  theme_enable(array('zen', 'brightbrain'));
   variable_set('theme_default', 'brightbrain');
 
 }
