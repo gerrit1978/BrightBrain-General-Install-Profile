@@ -3,13 +3,13 @@
 function bb_install_tasks($install_state) {
   return array(
     'bb_set_default_language' => array(
-      'display_name' => 'Set default language',
+      'display_name' => 'Standaardtaal instellen',
       'display' => TRUE,
       'type' => 'normal',
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
     ),
     'bb_add_homepage' => array(
-      'display_name' => 'Create a homepage',
+      'display_name' => 'Maak een homepage',
       'display' => TRUE,
       'type' => 'normal',
       'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
@@ -60,6 +60,11 @@ function bb_add_homepage(&$install_state) {
 function bb_extra_configurations(&$install_state) {
 
   // extra variables to be set
+  
+  // autopath pattern for nodes
   variable_set('pathauto_node_pattern', '[node:title]');
+  
+  // default theme
+  variable_set('theme_default', 'brightbrain');
 
 }
