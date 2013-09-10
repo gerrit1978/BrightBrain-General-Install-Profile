@@ -68,4 +68,8 @@ function bb_extra_configurations(&$install_state) {
   theme_enable(array('zen', 'brightbrain'));
   variable_set('theme_default', 'brightbrain');
 
+  // webform variables: hide comments and submitted by text
+  variable_set('comment_webform', 0);
+  variable_set('node_submitted_webform', 0);
+
 }
