@@ -63,6 +63,7 @@ dependencies[] = autocomplete_deluxe
 dependencies[] = ckeditor
 dependencies[] = ckeditor_link
 dependencies[] = jquery_update
+dependencies[] = lightbox2
 
 ; Media
 dependencies[] = imce
