@@ -83,3 +83,7 @@ dependencies[] = field_collection
 
 ; Webform
 dependencies[] = webform
+
+; Theme
+dependencies[] = zen
+dependencies[] = brightbrain
